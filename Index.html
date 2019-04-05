@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
     <!-- js -->
     <script src="./js/script.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,40 +15,28 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        html{
-            background-image:url(./image/image.jpg);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        li {
-            width: 600px;
-            background-color: aqua;
-            height: 50px;
-            margin:10%;
-            color:white;
-        }
-        input{
-            color:white;
-            font-weight:bold;
-        }
-        h1{
-            color:white;
-        }
-    </style>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 </head>
+
 <body>
-    <h1>TODO list</h1>
-    <p id="list">
-        <input type="text" id="inlisttext">
-        <button id="addbtn" onclick="btnclick();" class="waves-effect waves-light btn">add</button> 
-    </p>
-    <div id="container">
-        <ul id="todolist">
-        </ul>
+    <div class="container">
+        <h1>TODO list</h1>
+        <div class="row">
+            <p id="list">
+                <input type="text" id="inlisttext">
+                <button id="addbtn" onclick="btnclick();" class="waves-effect waves-light btn">add</button>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <ul id="todolist">
+            </ul>
+        </div>
     </div>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
+
 </html>
